@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'Lora', serif;
+    margin: 3rem;
+    font-size: 3rem;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+section {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background-color: #eaea7f;
+    height: 100vh;
+    position: relative;
+}
+
+ul {
+    width: 95%;
+    list-style: none;
+}
+
+li:nth-child(odd){
+    background-color: #77acf1;
+}
+
+li:nth-child(even){
+    background-color: #3edbf0;
+}
+
+
+li {
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0.5rem 0;
+    transition: 0.5s;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+li:hover{
+    background-color: #e1e8eb;
+    color: rgb(34, 33, 33);
+}
+
+div {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+input {
+    width: 60%;
+    height: 3rem;
+    padding: 0 1rem;
+    border: none;
+    box-shadow: 0 0 5px #262d69;
+    outline: none;
+    font-size: 1.25rem;
+}
+
+#add {
+    width: 30%;
+    box-shadow: 0 0 5px #262d69;
+    outline: none;
+    background-color: #262d69;
+    color: #fafafa;
+    border: none;
+    font-size: 1.5rem;
+}
+
+ion-icon{
+    font-size: 1.5rem;
+    
+    cursor: pointer;
+}
+
+.done {
+    width: 5%;
+    all: unset;
+    padding: 0.625rem;
+    background-color: transparent;
+    transition: 0.5s;
+    color: rgb(34, 33, 33);
+}
+
+.done:hover{
+    background-color: rgb(39, 212, 39);
+    color: #fafafa;
+}
+
+.del {
+    width: 5%;
+    all: unset;
+    padding: 0.625rem;
+    background-color: transparent;
+    transition: 0.5s;
+    color: rgb(34, 33, 33);
+}
+
+.del:hover{
+    background-color: #f24a72;
+    color: #fafafa;
+}
+
+button {
+    cursor: pointer;
+}
+
+.done-event {
+    background-color: #2cbb90 !important;
+    color: white;
+    text-decoration: line-through;
+}
+
+#header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fdaf75;
+    position: absolute;
+    top: 0;
+    padding: 2rem 0;
+    color: #262d69;
+}
